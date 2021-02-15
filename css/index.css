@@ -63,6 +63,14 @@ span {
   vertical-align: middle;
 }
 
+.article-time {
+  margin-right: 5px;
+}
+
+.article-date {
+  margin-left: 5px;
+}
+
 .article-tag {
   border: 2px solid #51B4B2;
   color: #51B4B2;
