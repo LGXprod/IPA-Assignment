@@ -26,10 +26,24 @@ label, p, span {
   justify-content: center;
 }
 
+.centered-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .search-box {
   display: inline-block;
+  width: 90%;
+  margin: 2px;
+  margin-right: 0;
+}
+
+.search-box-container {
   width: 40%;
-  margin-right: 40px;
+  background-color: #163F67;
+  border-radius: 4px;
 }
 
 .search-container {
