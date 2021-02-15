@@ -1,0 +1,53 @@
+/* Swis721 is a paid font. Used roboto as a place holder.
+Imported using google fonts cdn. */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+h1, h2, h3 {
+  font-weight: 700 !important;
+}
+
+label, p, span {
+  font-weight: 400 !important;
+}
+
+.content-width {
+  width: 90vw;
+}
+
+.center-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box {
+  display: inline-block;
+  width: 40%;
+  margin-right: 40px;
+}
+
+.search-container {
+  padding: 20px;
+  background-color: #ededed;
+}
+
+.sort-dropdown {
+  display: inline-block;
+}
+
+.banner-width {
+  display: 100vw;
+}
+
+#banner-image-container {
+  display: inline-block;
+  height: 10vh;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
