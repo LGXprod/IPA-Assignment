@@ -1,17 +1,21 @@
 /* Swis721 is a paid font. Used roboto as a place holder.
 Imported using google fonts cdn. */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700 !important;
 }
 
-label, p, span {
+label,
+p,
+span {
   font-weight: 400 !important;
 }
 
@@ -19,11 +23,63 @@ label, p, span {
   width: 90vw;
 }
 
-.center-column {
+.centered-column {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.centered-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-left {
+  align-items: flex-start;
+}
+
+.center-ends {
+  justify-content: space-between;
+}
+
+.article-info {
+  display: inline-block;
+}
+
+.article-info-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.article-icon {
+  width: 1.5vw;
+}
+
+.article-icon-label {
+  color: #51B4B2;
+  vertical-align: middle;
+}
+
+.article-tag {
+  border: 2px solid #51B4B2;
+  color: #51B4B2;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.large-thumbnail {
+  width: 25%;
+  height: 10vh;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-right: 40px;
+}
+
+.article-title-large {
+  width: 70%;
 }
 
 .search-box {
