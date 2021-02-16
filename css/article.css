@@ -21,7 +21,7 @@
   margin-top: 10px;
 }
 
-.nav {
+.nav-component {
   color: #163F67;
   font-weight: 700 !important;
 }
@@ -35,4 +35,18 @@
 .invert {
   margin-left: 5px;
   transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .thumbnail {
+    width: 90vw;
+  }
+
+  .nav-component {
+    display: inline-block;
+  }
+
+  #next-arrow {
+    float: right;
+  }
 }
