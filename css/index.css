@@ -306,4 +306,21 @@ a {
   .article-info .article-info {
     width: fit-content;
   }
+
+  #banner-text {
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  #banner-text h2 {
+    font-size: medium;
+  }
+
+  #banner-overlay-left {
+    width: 60%;
+  }
+
+  #banner-text hr {
+    width: 25px;
+  }
 }
