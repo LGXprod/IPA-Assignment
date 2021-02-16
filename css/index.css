@@ -111,18 +111,18 @@ a {
   margin-right: 40px;
 }
 
-.large-thumbnail img {
-  margin-left: 50%;
-  margin-top: 50%;
-  transform: translate(-50%, -50%) scale(0.5);
-}
-
 .small-thumbnail {
   width: 200px;
   height: 86px;
   overflow: hidden;
   border-radius: 5px;
   margin-right: 40px;
+}
+
+.large-thumbnail img, .small-thumbnail img {
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
 }
 
 .article-title-large {
