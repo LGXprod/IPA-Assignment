@@ -192,6 +192,11 @@ a {
   margin-top: 40px;
 }
 
+#more-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 @media only screen and (min-width: 992px) {
   .sort-dropdown {
     display: inline-block;
@@ -235,7 +240,7 @@ a {
 
   .article-title-large {
     width: 100%;
-  } 
+  }
 
   .article-tag {
     display: inline-block;
@@ -245,5 +250,37 @@ a {
 
   .large-thumbnail {
     width: 90vw;
+  }
+
+  .small-thumbnail {
+    width: 90vw;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 40px;
+  }
+
+  #more-title {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .large-thumbnail img,
+  .small-thumbnail img {
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+
+  .small-article-container, .more-articles-width {
+    width: 90vw;
+  }
+
+  .article-info {
+    width: 90vw;
+  }
+
+  .article-info .article-info {
+    width: fit-content;
   }
 }
