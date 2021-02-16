@@ -23,3 +23,14 @@
   color: #163F67;
   font-weight: 700 !important;
 }
+
+.arrow {
+  width: 7.5px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+.invert {
+  margin-left: 5px;
+  transform: rotate(180deg);
+}
