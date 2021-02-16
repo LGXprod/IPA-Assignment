@@ -65,6 +65,7 @@ a {
 
 .article-icon {
   width: 20px;
+  margin-right: 5px;
 }
 
 .article-icon-label {
@@ -155,9 +156,24 @@ a {
   width: 100vw;
 }
 
+.banner {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  z-index: 2;
+  transform: scale(1.5, 1.5);
+}
+
+/* .banner-image {
+  margin-top: 1000px;
+  transform: translateY(-1000px);
+} */
+
 #banner-image-container {
   display: inline-block;
   height: 10vh;
   overflow: hidden;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
 }
