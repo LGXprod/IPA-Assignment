@@ -79,7 +79,8 @@ span {
 }
 
 .large-thumbnail {
-  width: 25%;
+  width: 350px;
+  height: 197px;
   height: 10vh;
   overflow: hidden;
   border-radius: 5px;
