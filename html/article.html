@@ -24,7 +24,7 @@
     />
     <!-- better to display website than an image in this case as no thumbnail was provided -->
     <!-- must have a url for the image cannot use src -->
-    <meta property="og:image" content="thumbnail used in article" /> 
+    <meta property="og:image" content="thumbnail used in article" />
     <meta property="og:url" content="localhost/ipa" />
     <meta property="og:type" content="article" />
     <meta property="og:locale" content="en_AU" />
@@ -40,10 +40,7 @@
       content="On Tuesday, the South Australian Treasurer Rob Lucas handed down his government’s 2020-21 Budget. This outlines the state’s economic recovery strategy from COVID-19, of which infrastructure forms a major component. The Budget allocates approximately $13.5 billion in general government expenditure to infrastructure over the next four years, an increase of around $3.7 billion or 38 per cent compared to the previous Budget."
     />
     <!-- must have a url for the image cannot use src -->
-    <meta
-      name="twitter:image"
-      content="thumbnail used in article"
-    />
+    <meta name="twitter:image" content="thumbnail used in article" />
     <meta name="twitter:creator" content="@InfraPshipAust" />
     <!-- 16:9 aspect ratio is what is recommended -->
     <meta name="twitter:player:width" content="512" />
@@ -78,13 +75,22 @@
       <!-- banner -->
       <div class="banner-width">
         <div id="banner-image-container" class="banner-width">
-          <img alt="city underpass" src="../images/city.jpg" />
+          <img
+            class="banner"
+            alt="Banner overlay"
+            src="../images/overlays/banner.svg"
+          />
+          <img
+            class="banner-image"
+            alt="city underpass"
+            src="../images/city.jpg"
+          />
         </div>
       </div>
 
       <div class="content-width">
         <a href="../index.html">
-          <div class="nav" style="margin-bottom: 20px">
+          <div class="nav-component" style="margin-bottom: 20px">
             <img
               class="arrow"
               alt="Arrow icon"
@@ -187,9 +193,9 @@
       <hr class="content-width" />
 
       <div class="content-width">
-        <div class="centered-row center-ends">
+        <div class="centered-row center-ends" id="nav-container">
           <a href="../index.html">
-            <div class="nav" style="margin-bottom: 20px; color: #d2d2d2">
+            <div class="nav-component" style="margin-bottom: 20px; color: #d2d2d2">
               <img
                 class="arrow"
                 alt="Arrow icon"
@@ -202,7 +208,7 @@
           </a>
 
           <a href="../index.html">
-            <div class="nav" style="margin-bottom: 20px; color: #d2d2d2">
+            <div class="nav-component" id="next-arrow" style="margin-bottom: 20px; color: #d2d2d2">
               <label style="font-weight: 700 !important; vertical-align: middle"
                 >NEXT</label
               >
@@ -218,73 +224,75 @@
 
       <!-- More Articles -->
       <div class="content-width">
-        <h1 style="margin-top: 20px; margin-bottom: 20px">More Articles</h1>
+        <h1 id="more-title">More Articles</h1>
 
         <div class="centered-column more-articles-width">
           <div class="centered-row center-ends" style="width: 100%">
             <div class="centered-row small-article-container">
               <div class="article-info small-thumbnail">
-                <img
-                  alt="Road user charge"
-                  src="../images/More Articles/1.jpg"
-                />
+                <img alt="Road user charge" src="../images/More Articles/1.jpg" />
               </div>
 
               <div class="article-info small-article-info">
-                <div>
-                  <div class="article-info article-time">
-                    <img
-                      class="article-icon"
-                      alt="Clock icon"
-                      src="../images/icons/clock.svg"
-                    />
-                    <label class="article-icon-label">2 MIN READ</label>
+                <h5>Auckland City Hospital project commences</h5>
+
+                <div class="article-info">
+                  <div class="article-info">
+                    <div class="centered-row article-time">
+                      <img
+                        class="article-icon"
+                        alt="Clock icon"
+                        src="../images/icons/clock.svg"
+                      />
+                      <label class="article-icon-label">2 MIN READ</label>
+                    </div>
                   </div>
 
-                  <div class="article-info article-date">
-                    <img
-                      class="article-icon"
-                      alt="Calendar icon"
-                      src="../images/icons/calendar.svg"
-                    />
-                    <label class="article-icon-label">13/11/20</label>
+                  <div class="article-info">
+                    <div class="centered-row article-date">
+                      <img
+                        class="article-icon"
+                        alt="Calendar icon"
+                        src="../images/icons/calendar.svg"
+                      />
+                      <label class="article-icon-label">03/11/20</label>
+                    </div>
                   </div>
                 </div>
-
-                <h5>Auckland City Hospital project commences</h5>
               </div>
             </div>
 
             <div class="centered-row small-article-container">
               <div class="article-info small-thumbnail">
-                <img
-                  alt="Road user charge"
-                  src="../images/More Articles/2.jpg"
-                />
+                <img alt="Road user charge" src="../images/More Articles/2.jpg" />
               </div>
 
               <div class="article-info small-article-info">
-                <div>
-                  <div class="article-info article-time">
-                    <img
-                      class="article-icon"
-                      alt="Clock icon"
-                      src="../images/icons/clock.svg"
-                    />
-                    <label class="article-icon-label">2 MIN READ</label>
+                <h5>Procurement for Coomera Connector Stage One begins</h5>
+
+                <div class="article-info">
+                  <div class="article-info">
+                    <div class="centered-row article-time">
+                      <img
+                        class="article-icon"
+                        alt="Clock icon"
+                        src="../images/icons/clock.svg"
+                      />
+                      <label class="article-icon-label">2 MIN READ</label>
+                    </div>
                   </div>
 
-                  <div class="article-info article-date">
-                    <img
-                      class="article-icon"
-                      alt="Calendar icon"
-                      src="../images/icons/calendar.svg"
-                    />
-                    <label class="article-icon-label">13/11/20</label>
+                  <div class="article-info">
+                    <div class="centered-row article-date">
+                      <img
+                        class="article-icon"
+                        alt="Calendar icon"
+                        src="../images/icons/calendar.svg"
+                      />
+                      <label class="article-icon-label">17/11/20</label>
+                    </div>
                   </div>
                 </div>
-
-                <h5>Procurement for Coomera Connector Stage One begins</h5>
               </div>
             </div>
           </div>
@@ -294,73 +302,75 @@
           <div class="centered-row center-ends" style="width: 100%">
             <div class="centered-row small-article-container">
               <div class="article-info small-thumbnail">
-                <img
-                  alt="Road user charge"
-                  src="../images/More Articles/3.jpg"
-                />
+                <img alt="Road user charge" src="../images/More Articles/3.jpg" />
               </div>
 
               <div class="article-info small-article-info">
-                <div>
-                  <div class="article-info article-time">
-                    <img
-                      class="article-icon"
-                      alt="Clock icon"
-                      src="../images/icons/clock.svg"
-                    />
-                    <label class="article-icon-label">4 MIN READ</label>
-                  </div>
-
-                  <div class="article-info article-date">
-                    <img
-                      class="article-icon"
-                      alt="Calendar icon"
-                      src="../images/icons/calendar.svg"
-                    />
-                    <label class="article-icon-label">10/11/20</label>
-                  </div>
-                </div>
-
                 <h5>
                   NSW Government releases plan for supporting the transition to
                   renewables
                 </h5>
+
+                <div class="article-info">
+                  <div class="article-info">
+                    <div class="centered-row article-time">
+                      <img
+                        class="article-icon"
+                        alt="Clock icon"
+                        src="../images/icons/clock.svg"
+                      />
+                      <label class="article-icon-label">4 MIN READ</label>
+                    </div>
+                  </div>
+
+                  <div class="article-info">
+                    <div class="centered-row article-date">
+                      <img
+                        class="article-icon"
+                        alt="Calendar icon"
+                        src="../images/icons/calendar.svg"
+                      />
+                      <label class="article-icon-label">10/11/20</label>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="centered-row small-article-container">
               <div class="article-info small-thumbnail">
-                <img
-                  alt="Road user charge"
-                  src="../images/More Articles/4.jpg"
-                />
+                <img alt="Road user charge" src="../images/More Articles/4.jpg" />
               </div>
 
               <div class="article-info small-article-info">
-                <div>
-                  <div class="article-info article-time">
-                    <img
-                      class="article-icon"
-                      alt="Clock icon"
-                      src="../images/icons/clock.svg"
-                    />
-                    <label class="article-icon-label">3 MIN READ</label>
-                  </div>
-
-                  <div class="article-info article-date">
-                    <img
-                      class="article-icon"
-                      alt="Calendar icon"
-                      src="../images/icons/calendar.svg"
-                    />
-                    <label class="article-icon-label">17/11/20</label>
-                  </div>
-                </div>
-
                 <h5>
                   Infrastructure Victoria releases updated infrastructure
                   strategy
                 </h5>
+
+                <div class="article-info">
+                  <div class="article-info">
+                    <div class="centered-row article-time">
+                      <img
+                        class="article-icon"
+                        alt="Clock icon"
+                        src="../images/icons/clock.svg"
+                      />
+                      <label class="article-icon-label">3 MIN READ</label>
+                    </div>
+                  </div>
+
+                  <div class="article-info">
+                    <div class="centered-row article-date">
+                      <img
+                        class="article-icon"
+                        alt="Calendar icon"
+                        src="../images/icons/calendar.svg"
+                      />
+                      <label class="article-icon-label">17/11/20</label>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -373,13 +383,14 @@
           >
             <div class="centered-row small-article-container">
               <div class="article-info small-thumbnail">
-                <img
-                  alt="Road user charge"
-                  src="../images/More Articles/5.jpg"
-                />
+                <img alt="Road user charge" src="../images/More Articles/5.jpg" />
               </div>
 
               <div class="article-info small-article-info">
+                <h5>
+                  Procurement commences for Greater Sydney Bus Region Nine`
+                </h5>
+
                 <div>
                   <div class="article-info article-time">
                     <img
@@ -399,43 +410,40 @@
                     <label class="article-icon-label">10/11/20</label>
                   </div>
                 </div>
-
-                <h5>
-                  Procurement commences for Greater Sydney Bus Region Nine`
-                </h5>
               </div>
             </div>
 
             <div class="centered-row small-article-container">
               <div class="article-info small-thumbnail">
-                <img
-                  alt="Road user charge"
-                  src="../images/More Articles/6.jpg"
-                />
+                <img alt="Road user charge" src="../images/More Articles/6.jpg" />
               </div>
 
               <div class="article-info small-article-info">
-                <div>
-                  <div class="article-info article-time">
-                    <img
-                      class="article-icon"
-                      alt="Clock icon"
-                      src="../images/icons/clock.svg"
-                    />
-                    <label class="article-icon-label">3 MIN READ</label>
+                <h5>2020-2021 West Australian Budget</h5>
+
+                <div class="article-info">
+                  <div class="article-info">
+                    <div class="centered-row article-time">
+                      <img
+                        class="article-icon"
+                        alt="Clock icon"
+                        src="../images/icons/clock.svg"
+                      />
+                      <label class="article-icon-label">3 MIN READ</label>
+                    </div>
                   </div>
 
-                  <div class="article-info article-date">
-                    <img
-                      class="article-icon"
-                      alt="Calendar icon"
-                      src="../images/icons/calendar.svg"
-                    />
-                    <label class="article-icon-label">17/11/20</label>
+                  <div class="article-info">
+                    <div class="centered-row article-date">
+                      <img
+                        class="article-icon"
+                        alt="Calendar icon"
+                        src="../images/icons/calendar.svg"
+                      />
+                      <label class="article-icon-label">17/11/20</label>
+                    </div>
                   </div>
                 </div>
-
-                <h5>2020-2021 West Australian Budget</h5>
               </div>
             </div>
           </div>
