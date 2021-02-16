@@ -151,29 +151,40 @@ a {
 
 .banner-width {
   width: 100vw;
+  max-width:100%;
 }
 
-.banner {
+#banner-overlay-left {
   position: absolute;
   top: 0;
-  right: 40px;
+  left: 0;
   z-index: 2;
-  transform: scale(1.5, 1.5);
+  border-bottom: 10.5vh solid #163F67;
+  border-right: 10.5vh solid transparent;
+  height: 0;
+  width: 50%;
 }
 
-.banner-text {
+#banner-overlay-right {
   position: absolute;
-  z-index: 3;
-  top: 10px;
-  left: 12.5%;
-  width: 200px;
-  color: white;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 9vh solid #51B4B2;
+  border-left: 90px solid transparent;
 }
 
-.banner-text hr {
+#banner-text {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#banner-text hr {
   width: 50px;
   border: none;
-  height: 2.5px;
+  height: 1.5px;
   color: white !important;
   opacity: 1 !important;
 }
@@ -284,7 +295,8 @@ a {
     transform: translate(-50%, -50%) scale(0.8);
   }
 
-  .small-article-container, .more-articles-width {
+  .small-article-container,
+  .more-articles-width {
     width: 90vw;
   }
 
@@ -294,5 +306,22 @@ a {
 
   .article-info .article-info {
     width: fit-content;
+  }
+
+  #banner-text {
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  #banner-text h2 {
+    font-size: medium;
+  }
+
+  #banner-overlay-left {
+    width: 60%;
+  }
+
+  #banner-text hr {
+    width: 25px;
   }
 }
