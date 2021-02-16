@@ -164,10 +164,22 @@ a {
   transform: scale(1.5, 1.5);
 }
 
-/* .banner-image {
-  margin-top: 1000px;
-  transform: translateY(-1000px);
-} */
+.banner-text {
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  left: 12.5%;
+  width: 200px;
+  color: white;
+}
+
+.banner-text hr {
+  width: 50px;
+  border: none;
+  height: 2.5px;
+  color: white !important;
+  opacity: 1 !important;
+}
 
 #banner-image-container {
   display: inline-block;
