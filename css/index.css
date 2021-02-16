@@ -9,8 +9,10 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h5 {
   font-weight: 700 !important;
+  color: #163F67;
 }
 
 label,
@@ -55,7 +57,7 @@ span {
 }
 
 .article-icon {
-  width: 1.5vw;
+  width: 20px;
 }
 
 .article-icon-label {
@@ -78,10 +80,33 @@ span {
   margin-right: 5px;
 }
 
+.more-articles-width {
+  width: 90%;
+}
+
+.more-articles-line {
+  width: 100%;
+}
+
+.small-article-info {
+  width: calc(100% - 200px);
+}
+
+.small-article-container {
+  width: 45%;
+}
+
 .large-thumbnail {
   width: 350px;
-  height: 197px;
-  height: 10vh;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-right: 40px;
+}
+
+.small-thumbnail {
+  width: 200px;
+  height: 86px;
   overflow: hidden;
   border-radius: 5px;
   margin-right: 40px;
@@ -114,7 +139,7 @@ span {
 }
 
 .banner-width {
-  display: 100vw;
+  width: 100vw;
 }
 
 #banner-image-container {
