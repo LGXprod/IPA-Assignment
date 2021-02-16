@@ -1,0 +1,25 @@
+.thumbnail {
+  display: inline-block;
+  width: 512px;
+  height: 220px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 40px;
+}
+
+.title {
+  width: 100%;
+}
+
+.title-info {
+  margin-top: 10px;
+}
+
+.article-icon {
+  margin-right: 5px;
+}
+
+.nav {
+  color: #163F67;
+  font-weight: 700 !important;
+}
